@@ -1,0 +1,6 @@
+/* リストの行頭記号や数字を本文位置に合わせる。デフォルト値は outside */
+li {
+	display: list-item !important;
+	position: static !important;
+	list-style-position: inside;
+}

@@ -1,0 +1,164 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Description:  Twenty Seventeen Child Theme
+ Author:       birdy
+ Author URI:   http://codeaid.jp/school
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twentyseventeenchild
+*/
+
+/*--------------------------------------------------------------
+ サイト全体のフォント指定
+--------------------------------------------------------------*/
+html[lang="ja"] body,
+html[lang="ja"] button,
+html[lang="ja"] input,
+html[lang="ja"] select,
+html[lang="ja"] textarea {
+	font-family: -apple-system, BlinkMacSystemFont, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Roboto, sans-serif;
+}
+.twentyseventeen-customizer.twentyseventeen-front-page .twentyseventeen-panel .twentyseventeen-panel-title,
+.site-content .wp-playlist-current-item .wp-playlist-item-artist,
+.widget_rss .rss-date,
+.widget_rss li cite,
+.comment-metadata,
+.nav-subtitle,
+.entry-footer .cat-links,
+.entry-footer .tags-links,
+.entry-meta,
+.page .panel-content .entry-title,
+.page-title,
+body.page:not(.twentyseventeen-front-page) .entry-title,
+.site-title,
+h5,
+h2.widget-title {
+	text-transform: none;
+}
+/*--------------------------------------------------------------
+ フッターの背景色
+--------------------------------------------------------------*/
+.site-footer {
+	background-color: gainsboro;
+}
+.site-info a {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/*--------------------------------------------------------------
+ 投稿リストにアイキャッチ画像を付けるデザイン
+--------------------------------------------------------------*/
+/* listing posts page */
+.home-box {
+	position: relative;
+}
+.home-box .home-thumbnail {
+	width: 18%;
+}
+.home-box .home-thumbnail img {
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
+.home-box .home-content {
+	position: absolute;
+	top: 0;
+	margin-left: 22%;
+}
+.home-box .home-content .entry-header {
+	margin: 0;
+	padding: 0;
+}
+.home-box .home-content .entry-title {
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+.home-box .home-excerpt {
+	display: none;
+}
+/*--------------------------------------------------------------
+13.4 Posts
+--------------------------------------------------------------*/
+
+/* Blog landing, search, archives */
+
+.blog .site-main > article,
+.archive .site-main > article,
+.search .site-main > article {
+	padding-bottom: 0.2em; /* 2em */
+}
+
+/*--------------------------------------------------------------
+19.0 Media Queries
+--------------------------------------------------------------*/
+/* Adjust positioning of edit shortcuts, override style in customize-preview.css */
+@media screen and (min-width: 20em) {
+	.home-box .home-content .entry-title {
+		font-size: 12px;
+		font-size: 0.75rem;
+	}
+}
+
+@media screen and (min-width: 30em) {
+
+	/* listing posts page */
+	.home-box .home-content .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	.home-box .home-excerpt {
+		display: block;
+		font-size: 12px;
+		font-size: 0.75rem;
+		line-height: 1.4em;
+	}
+
+
+}
+
+@media screen and (min-width: 48em) { /* two column start */
+
+	/* listing posts page */
+	.home-box .home-content .entry-title {
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+	.home-box .home-excerpt {
+		display: none;
+	}
+
+	/* Blog, archive, search */
+
+	.blog .site-main > article,
+	.archive .site-main > article,
+	.search .site-main > article {
+		padding-bottom: 0.4em; /* 4em */
+	}
+}
+
+@media screen and ( min-width: 67em ) {
+
+	/* listing posts page */
+	.home-box .home-content .entry-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	.home-box .home-excerpt {
+		display: block;
+		font-size: 12px;
+		font-size: 0.75rem;
+		line-height: 1.4em;
+	}
+}
+@media screen and ( min-width: 79em ) {
+
+}
+
+@media screen and ( max-width: 48.875em ) and ( min-width: 48em ) {
+
+}
+
+/* リストの行頭記号や数字を本文位置に合わせる。デフォルト値は outside */
+.entry-content li {
+	list-style-position: inside;
+}
