@@ -89,6 +89,9 @@
 <meta property="og:locale:alternate" content="en_GB">
 <meta property="og:locale:alternate" content="zh_TW">
 <meta property="fb:app_id" content="2002804263297057">
+<meta name="twitter:site" content="@CodeAidxx">
+<meta name="twitter:creator" content="@CodeAidxx">
+<meta name="twitter:card" content="summary_large_image">
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
