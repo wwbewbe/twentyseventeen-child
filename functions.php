@@ -26,4 +26,20 @@ function child_theme_setup(){
    load_child_theme_textdomain('twentyseventeenchild', get_stylesheet_directory() . '/languages' );
 }
 
+// サムネイル画像取得
+function get_thumbnail_url( $size ) {
+  global $post;
+
+  if ( has_post_thumbnail() ) {
+    $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), $size );
+    $url = $postthumb[0];
+  } elseif( preg_match( '/wp-image-(\d+)/s', $post->post_content, $thumbid ) ) {
+    $postthumb = wp_get_attachment_image_src( $thumbid[1], $size );
+    $url = $postthumb[0];
+  } else {
+    $url = get_stylesheet_directory_uri() . '/assets/images/no-image.png';
+  }
+  return $url;
+}
+
 ?>
