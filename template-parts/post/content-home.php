@@ -46,7 +46,7 @@ remove_action('wp_get_attachment_image_attributes', 'twentyseventeen_post_thumbn
 			<div class="home-excerpt">
 <?php
 				$content_excerpt = get_the_excerpt();
-				$article_title = strlen(get_the_title());
+				$article_title = mb_strlen(get_the_title());
 
 				if ( $article_title >72 ) :
 
