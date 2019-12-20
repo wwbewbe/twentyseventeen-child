@@ -77,6 +77,15 @@ h2.widget-title {
 	display: none;
 }
 /*--------------------------------------------------------------
+ 投稿リストにアイキャッチ画像を付けるデザイン
+--------------------------------------------------------------*/
+.twentyseventeen-panel {
+	background-image: url(https://codeaid.jp/school/wp-content/uploads/2019/12/toppage-background2.png);
+}
+.panel-content .wrap {
+	background-color: white;
+}
+/*--------------------------------------------------------------
 13.4 Posts
 --------------------------------------------------------------*/
 
